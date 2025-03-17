@@ -72,8 +72,8 @@ contract MyDexTest is Test {
         router.addLiquidityETH{value: amountETH}(
             address(token),
             amountTokenDesired,
-            amountTokenDesired * 99 / 100,  // 最小代币数量（1% 滑点）
-            amountETH * 99 / 100,          // 最小 ETH 数量（1% 滑点）
+            0
+            0
             user,
             block.timestamp          // 2分钟过期时间
         ); 
