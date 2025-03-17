@@ -176,7 +176,7 @@ contract MyDexTest is Test {
         uint256 userInitialETH = user.balance;
         uint256 userInitialToken = token.balanceOf(user);
 
-        // 移除一半流动性
+        // 移除流动性
         pair.approve(address(router), liquidity);
         router.removeLiquidityETH(
             address(token),
