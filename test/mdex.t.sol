@@ -58,10 +58,7 @@ contract MyDexTest is Test {
         pair = IUniswapV2Pair(pairAddress);
     }
     
-    /**
-     * @notice 测试添加流动性功能
-     * @dev 验证用户能否成功添加 ETH 和代币的流动性
-     */
+
     function testAddLiquidity() public {
         vm.startPrank(user);
         
